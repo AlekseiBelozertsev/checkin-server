@@ -18,6 +18,7 @@
     "prettier": "^3.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.51.0",
+    "prisma": "^5.4.2"
   }
 }
