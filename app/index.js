@@ -10,5 +10,7 @@ app.use(
     extended: true,
   }),
 );
-app.use(places);
+app.use(places.addPlaces);
+app.use(places.getPlaces);
+
 module.exports = app;

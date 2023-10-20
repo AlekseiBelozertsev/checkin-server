@@ -1,5 +1,10 @@
 const router = require("express").Router();
 const placesController = require("../controllers/index");
 
-const placesRoute = router.post("/places", placesController.addPlaces);
-module.exports = placesRoute;
+const addPlaces = router.post("/addPlaces", placesController.addPlaces);
+const getPlaces = router.get("/getPlaces", placesController.getPlaces);
+const placesRoutes = {
+  getPlaces,
+  addPlaces,
+};
+module.exports = placesRoutes;
