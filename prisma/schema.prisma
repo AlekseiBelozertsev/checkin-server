@@ -15,6 +15,6 @@ model Place {
   name       String
   country    String
   address    String
-  coordintes Float[]
+  coordinates Float[]
   createdAt  DateTime @default(now())
 }
