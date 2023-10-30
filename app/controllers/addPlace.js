@@ -17,7 +17,7 @@ const addPlaceController = async (req, res) => {
       name: receivedData.name,
       address: receivedData.address,
       country: getCountry(receivedData.country),
-      coordinates: receivedData.coordintes,
+      coordinates: receivedData.coordinates,
       createdAt: receivedData.createdAt,
     },
   });
