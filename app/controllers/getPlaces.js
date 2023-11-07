@@ -2,8 +2,12 @@
 const prisma = require("../prismaClient");
 
 const getPlacesController = async (req, res) => {
-  const places = await prisma.place.findMany();
-  res.send(places);
+  try {
+    const places = await prisma.place.findMany();
+    res.send(places);
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 module.exports = getPlacesController;
