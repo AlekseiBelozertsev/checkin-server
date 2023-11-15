@@ -12,5 +12,7 @@ app.use(
 );
 app.use(places.addPlaces);
 app.use(places.getPlaces);
+app.use(places.getPlace);
+app.use(places.deletePlace);
 
 module.exports = app;
